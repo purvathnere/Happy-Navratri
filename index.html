@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Navratri</title>
+    <link rel="shortcut icon" href="images/favicon.gif" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="playButton">
+    <audio src="audio/audio.mp3" loop autoplay></audio>
+    <audio id="myAudio" src="audio/audio.mp3" loop></audio>
+    
+    <script>
+        var audio = document.getElementById("myAudio");
+        var playButton = document.getElementById("playButton");
+
+        playButton.addEventListener("click", function() {
+            if (audio.paused) {
+                audio.play();
+            } 
+        });
+    </script>
+    <div class="row" id="hb">
+        <div class="zigzag">
+            <p class="wishing">
+                <span class="text-red">W</span>
+                <span class="text-purple">i</span>
+                <span class="text-blue">s</span>
+                <span class="text-teal">h</span>
+                <span class="text-cyan">i</span>
+                <span class="text-orange">n</span>
+                <span class="text-green">g &nbsp;</span>
+                <span class="text-yellow">Y</span>
+                <span class="text-teal">o</span>
+                <span class="text-red">u</span>
+            </p>
+            <p>nine nights</p>
+            <h4>of</h4>
+            <h1>Devotion, Spirituality</h1>
+            <h4>&</h4>
+            <h1>Happiness</h1>
+        </div>
+        <div class="happy">
+            <div>
+                <span class="move1 name">H</span>
+                <span class="move2 name">A</span>
+                <span class="move3 name">P</span>
+                <span class="move4 name">P</span>
+                <span class="move5 name">Y</span>
+            </div>
+            <div>
+                <span class="move5 name">N</span>
+                <span class="move3 name">A</span>
+                <span class="move1 name">V</span>
+                <span class="move4 name">R</span>
+                <span class="move2 name">A</span>
+                <span class="move5 name">T</span>
+                <span class="move3 name">R</span>
+                <span class="move1 name">I</span>
+            </div>
+        </div>
+    </div>
+    <div class="navratri">        
+        <span style="--i:1;"><img class="img-fluid" src="images/1.jpg" alt=""></span>
+        <span style="--i:2;"><img class="img-fluid" src="images/2.webp" alt=""></span>
+        <span style="--i:3;"><img class="img-fluid" src="images/3.jpg" alt=""></span>
+        <span style="--i:4;"><img class="img-fluid" src="images/4.jpg" alt=""></span>
+        <span style="--i:5;"><img class="img-fluid" src="images/5.webp" alt=""></span>
+        <span style="--i:6;"><img class="img-fluid" src="images/6.webp" alt=""></span>
+        <span style="--i:7;"><img class="img-fluid" src="images/7.webp" alt=""></span>
+        <span style="--i:8;"><img class="img-fluid" src="images/8.jpg" alt=""></span>
+        <span style="--i:9;"><img class="img-fluid" src="images/9.jpg" alt=""></span>
+    </div>
+</body>
+
+</html>

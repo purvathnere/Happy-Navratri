@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;   
+    color: #bbb3a2; 
+    /* border: 1px solid red; */
+}
+body{
+    font-family: Comic Sans MS, cursive;
+    background-color: #181818;
+    background-image: url(images/conf.webp);
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.wishing{
+    font-size: 35px;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-purple {
+    color: purple;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.text-teal {
+    color: teal;
+}
+
+.text-cyan {
+    color: cyan;
+}
+
+.text-orange {
+    color: orange;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-yellow {
+    color: yellow;
+}
+.zigzag{
+    position: relative;
+    animation: zigzag 2s infinite;
+    z-index: 900;
+    width: 90%;
+    margin: 0 10px;
+}
+span{
+    display: inline-block;
+}
+.name {
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 8vh;    
+    font-family: Arial, sans-serif;
+    text-shadow: 20px 12px 4px #24480080;
+    background-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.move1{
+    animation: move 2.5s alternate infinite,    
+    Change 1s alternate infinite;
+}
+.move2{
+    animation: move 3s alternate infinite,
+    Change 2s alternate infinite;
+}
+.move3{
+    animation: move 2s alternate infinite,
+    Change 3.2s alternate infinite;
+}
+.move4{
+    animation: move 3.2s alternate infinite,
+    Change 1.75s alternate infinite;
+}
+.move5{
+    animation: move 2.75s alternate infinite,
+    Change 3s alternate infinite;
+}
+
+@keyframes zigzag {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(10px) translateY(-10px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(-10px) translateY(-10px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes Change {
+    0% { background-clip: text; color: transparent; }
+    25% { color: red; }
+    50% { background-clip: text; color: transparent; }
+    75% { background-image: linear-gradient(90deg, #3b219c, #c4e743, #db1919); }
+    100% { background-clip: text; color: transparent; }
+}
+@keyframes move {
+    0% { transform: translateY(0); }
+    10% { transform: translateY(-50px); } 
+    25% { transform: translateX(0); }
+    40% { transform: translateX(-50px); } 
+    60% { transform: translateY(0); }
+    75% { transform: translateY(50px); }
+    91% { transform: translateX(0); }
+    100% { transform: translateX(50px); }
+}
+
+    #hb {
+        margin-top: 50px;
+    }
+    .countdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+
+    .countdown-item {
+        margin: 0 10px;
+    }
+
+    .countdown-item span {
+        font-weight: bold;
+    }
+    .navratri{
+        position: fixed;
+        z-index: 0;
+        top: 30%;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 200px;
+        transform-style: preserve-3d;
+        animation: animate 20s linear infinite;
+        justify-content: center;
+        margin-left: 33%;
+    }
+    @keyframes animate {
+        0%{ transform: perspective(1000px) rotateY(0deg);}
+        100%{ transform: perspective(1000px) rotateY(360deg);}
+    }
+    .navratri span{
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        margin: 10px;
+        width: 80%;
+        height: 80%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i)*40deg)) translateZ(400px);
+        -webkit-box-reflect: below 0px liner-gradien(transparent, transparent,#0004);
+    }
+    .navratri span img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 80%;
+        transition: transform 0.3s;
+        border-radius: 10px 2px;    
+    }
+    .happy{
+        margin-top: 220px;
+    }
+    .navratri span img:hover{
+        filter: brightness(1.5);
+    }
